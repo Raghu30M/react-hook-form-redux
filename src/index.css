@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+     font-family: "Jost", sans-serif !important;
+    background: #8e0e00;
+    background: -webkit-linear-gradient(to right, #8e0e00, #1f1c18);
+    background: linear-gradient(to right, #8e0e00, #1f1c18);
+}
