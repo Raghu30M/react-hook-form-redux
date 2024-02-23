@@ -1,0 +1,103 @@
+.form-section {
+    min-height: 100vh;
+}
+
+/* FORM */
+
+.form-elements {
+    box-shadow: 0px 0px 20px -8px rgba(255, 255, 255, 0.8);
+    -webkit-box-shadow: 0px 0px 20px -8px rgba(255, 255, 255, 0.8);
+    -moz-box-shadow: 0px 0px 20px -8px rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    border-radius: 10px;
+    padding: 35px 25px;
+}
+
+/* LABELS */
+
+.form-section .form-elements .form-label {
+    color: white;
+    letter-spacing: 2px;
+}
+
+.form-section .form-elements .form-check .form-check-label {
+    color: white;
+    letter-spacing: 1px;
+    font-size: 16px;
+}
+
+/* INPUT-FIELDS  */
+
+.form-section .form-elements .form-control,
+.form-section .form-elements .form-select {
+    color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.55);
+    letter-spacing: 1.2px;
+    font-size: 15px;
+    transition: 0.3s ease-in-out;
+}
+
+.form-section .form-elements .form-control:focus {
+    box-shadow: none;
+    border: 1px solid rgba(255, 255, 255, 1);
+    transition: 0.3s ease-in-out;
+}
+
+.form-section .form-elements textarea {
+    resize: none;
+}
+
+/* PLACEHOLDER */
+
+.form-section .form-elements .form-control::placeholder {
+    letter-spacing: 1.2px;
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+/* SUBMIT-BTN */
+
+.form-section .form-elements .submit-btn {
+    color: white;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    background: #8e0e00;
+    background: -webkit-linear-gradient(to right, #8e0e00, #1f1c18);
+    background: linear-gradient(to right, #8e0e00, #1f1c18);
+    border: 1px solid rgba(255, 255, 255, 0.55);
+    padding: 8px 18px;
+    transition: 0.5s ease-in-out;
+}
+
+/* RADIO-FIELDS */
+
+.form-section .form-elements .submit-btn:hover {
+    background: -webkit-linear-gradient(to left, #8e0e00, #1f1c18);
+    background: linear-gradient(to left, #8e0e00, #1f1c18);
+    transition: 0.5s ease-in-out;
+}
+
+.form-section .form-elements .form-check .form-check-input:hover,
+.form-section .form-elements .form-check .form-check-label:hover,
+.form-section .form-elements .form-select:hover {
+    cursor: pointer;
+}
+
+.form-section .form-elements .form-check .form-check-input:checked {
+    box-shadow: none;
+    background-color: #8e0e00;
+    border-color: #8e0e00;
+}
+
+/* SELECT */
+
+.form-section .form-elements .form-select:focus {
+    box-shadow: none;
+}
+
+.form-section .form-elements .form-select option {
+    color: black;
+}
