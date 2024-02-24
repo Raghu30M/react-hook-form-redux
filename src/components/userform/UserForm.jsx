@@ -10,6 +10,7 @@ const UserForm = () => {
     const {
         register,
         handleSubmit,
+        reset,
         formState: { errors },
     } = useForm();
 
@@ -33,12 +34,13 @@ const UserForm = () => {
                         className="row justify-content-center"
                         onSubmit={handleSubmit((data) => {
                             const newData = {
-                                id: uuidv4(), // Generating a unique ID
+                                id: uuidv4(), 
                                 createdAt: new Date().toLocaleString("en-IN", {
                                     timeZone: "Asia/Kolkata",
-                                }), // Adding the current date and time
-                                ...data, // Including the original data
+                                }), 
+                                ...data, 
                             };
+                             reset();
                             dispatch(submitForm(newData));
                         })}
                     >
